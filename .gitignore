@@ -1,0 +1,10 @@
+build
+node_modules
+.env-*
+yarn-error.log
+.DS_Store
+.service-accounts/credentials
+terraform/.terraform
+terraform/terraform.tfstate
+*-logs
+yarn.lock
