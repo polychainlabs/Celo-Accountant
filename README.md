@@ -1,6 +1,10 @@
 # Celo Accountant
 
-An application to collect on chain rewards for the Celo Blockchain and store them in BigQuery.
+An application track balance changes on the Celo Blockchain and store results in BigQuery.
+
+The goal is to observe any and all balance changes across monitored accounts, and store them
+as a series of credits and debits, ideal for accounting purposes. At Polychain, this software
+helps our Finance team keep track of balances and perform end of month accounting operations.
 
 ## Requirements
 
@@ -21,6 +25,7 @@ This:
 ## Running locally
 
 Update the `.env.development` file appropriately.
+Add all addresses you want to monitor to `addresses.mainnet.yaml` and `addresses.baklava.yaml`.
 
 Then:
 ```
