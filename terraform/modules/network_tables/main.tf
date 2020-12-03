@@ -81,6 +81,12 @@ resource "google_bigquery_table" "transactions" {
     "description": "The trxn amount in wei"
   },
   {
+    "name": "amount",
+    "type": "NUMERIC",
+    "mode": "REQUIRED",
+    "description": "The trxn amount in CELO"
+  },
+  {
     "name": "currency",
     "type": "STRING",
     "mode": "REQUIRED",

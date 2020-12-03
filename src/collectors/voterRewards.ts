@@ -77,8 +77,8 @@ export default class VoterRewardsCollector extends BaseCollector {
             block: lastBlock,
             earned_at: lastBlockTime,
             earned_date: lastBlockDate,
-            rewards_category: 'voter',
-            rewards_type: 'credit',
+            category: 'voter',
+            type: 'credit',
           });
         } else if (new BN(rewardAmount).ltn(0)) {
           this.log(

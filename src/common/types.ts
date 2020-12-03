@@ -126,8 +126,8 @@ export interface Reward {
   block: number;
   earned_at: string;
   earned_date: string;
-  rewards_category: string;
-  rewards_type: string;
+  category: string;
+  type: string;
 }
 
 export type Rewards = Array<Reward>;

@@ -36,8 +36,8 @@ export default class ExchangesCollector extends BaseCollector {
         block: event.blockNumber,
         earned_at: this.timestampFromBlockTime(block.timestamp),
         earned_date: this.dateFromBlockTime(block.timestamp),
-        rewards_category: 'exchange',
-        rewards_type: 'credit',
+        category: 'exchange',
+        type: 'credit',
       });
       // The Sell Debit
       rewards.push({
@@ -51,8 +51,8 @@ export default class ExchangesCollector extends BaseCollector {
         block: lastBlock,
         earned_at: this.timestampFromBlockTime(block.timestamp),
         earned_date: this.dateFromBlockTime(block.timestamp),
-        rewards_category: 'exchange',
-        rewards_type: 'debit',
+        category: 'exchange',
+        type: 'debit',
       });
     });
 

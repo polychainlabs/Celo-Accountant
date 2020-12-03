@@ -38,8 +38,8 @@ export default class AttestationFeesCollector extends BaseCollector {
         block: lastBlock,
         earned_at: this.timestampFromBlockTime(block.timestamp),
         earned_date: this.dateFromBlockTime(block.timestamp),
-        rewards_category: 'attestationFees',
-        rewards_type: 'credit',
+        category: 'attestationFees',
+        type: 'credit',
       });
     });
 

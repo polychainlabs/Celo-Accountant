@@ -42,8 +42,8 @@ export default class ValidatorRewardsCollector extends BaseCollector {
           block: lastBlock,
           earned_at: lastBlockTime,
           earned_date: lastBlockDate,
-          rewards_category: 'validator',
-          rewards_type: 'credit',
+          category: 'validator',
+          type: 'credit',
         });
         rewards.push({
           address: group,
@@ -56,8 +56,8 @@ export default class ValidatorRewardsCollector extends BaseCollector {
           block: lastBlock,
           earned_at: lastBlockTime,
           earned_date: lastBlockDate,
-          rewards_category: 'group',
-          rewards_type: 'credit',
+          category: 'group',
+          type: 'credit',
         });
       });
     });

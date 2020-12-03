@@ -46,8 +46,8 @@ export default class LockedGoldCollector extends BaseCollector {
         block: event.blockNumber,
         earned_at: this.timestampFromBlockTime(block.timestamp),
         earned_date: this.dateFromBlockTime(block.timestamp),
-        rewards_category: 'goldLocked',
-        rewards_type: 'credit',
+        category: 'goldLocked',
+        type: 'credit',
       });
     });
 
@@ -67,8 +67,8 @@ export default class LockedGoldCollector extends BaseCollector {
         block: event.blockNumber,
         earned_at: this.timestampFromBlockTime(block.timestamp),
         earned_date: this.dateFromBlockTime(block.timestamp),
-        rewards_category: 'lockedGoldWithdrawn',
-        rewards_type: 'debit',
+        category: 'lockedGoldWithdrawn',
+        type: 'debit',
       });
     });
 

@@ -44,8 +44,8 @@ export default class StableTokenCollector extends BaseCollector {
         block: event.blockNumber,
         earned_at: this.timestampFromBlockTime(block.timestamp),
         earned_date: this.dateFromBlockTime(block.timestamp),
-        rewards_category: 'cUSDTransfer',
-        rewards_type: 'credit',
+        category: 'cUSDTransfer',
+        type: 'credit',
       });
     });
 
@@ -64,8 +64,8 @@ export default class StableTokenCollector extends BaseCollector {
         block: event.blockNumber,
         earned_at: this.timestampFromBlockTime(block.timestamp),
         earned_date: this.dateFromBlockTime(block.timestamp),
-        rewards_category: 'cUSDTransfer',
-        rewards_type: 'debit',
+        category: 'cUSDTransfer',
+        type: 'debit',
       });
     });
 

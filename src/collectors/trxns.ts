@@ -44,8 +44,8 @@ export default class TrxnsCollector extends BaseCollector {
             block: Number(trxn.blockNumber),
             earned_at: this.timestampFromBlockTime(trxn.timeStamp),
             earned_date: this.dateFromBlockTime(trxn.timeStamp),
-            rewards_category: 'trxn',
-            rewards_type: isNegative ? 'debit' : 'credit',
+            category: 'trxn',
+            type: isNegative ? 'debit' : 'credit',
           });
         }
       });
@@ -89,8 +89,8 @@ export default class TrxnsCollector extends BaseCollector {
             block: Number(block.number),
             earned_at: this.timestampFromBlockTime(block.timestamp),
             earned_date: this.dateFromBlockTime(block.timestamp),
-            rewards_category: 'internalTrxn',
-            rewards_type: isNegative ? 'debit' : 'credit',
+            category: 'internalTrxn',
+            type: isNegative ? 'debit' : 'credit',
           });
         }
       });
@@ -149,8 +149,8 @@ export default class TrxnsCollector extends BaseCollector {
         block: lastBlock,
         earned_at: lastBlockTime,
         earned_date: lastBlockDate,
-        rewards_category: 'trxnFees',
-        rewards_type: 'credit',
+        category: 'trxnFees',
+        type: 'credit',
       });
     });
 
